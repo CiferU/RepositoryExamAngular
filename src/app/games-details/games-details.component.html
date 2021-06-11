@@ -1,0 +1,84 @@
+<div class="content-wrapper">
+
+    <div class="card">
+        <div class="card-header">
+            Games details
+        </div>
+        <div class="card-body">
+
+            <form [formGroup]="detailsForm">
+
+                <label>PreferedGenre</label>
+                <input id="fullname" formControlName="fullname" type="text" class="form-control" placeholder="Add the full neme of the user">
+                <div *ngIf="getControl.fullname.invalid && (getControl.fullname.dirty || getControl.fullname.touched)" class="alert alert-danger">
+                    <div *If="getControl.fullname.errors?.required">
+                        Name cannot be empty
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.minlenght">
+                        Not enough characters
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.maxlength">
+                        The username exceeds the maximum number of characters
+                    </div>
+                </div>
+
+
+
+                <label>MainGame</label>
+                <input id="mail" formControlName = "mail" type="text" class= "form-control" placeholder="Add your mail">
+                <div *ngIf="getControl.mail.invalid && (getControl.mail.dirty || getControl.mail.touched)" class="alert alert-danger">
+                    <div *If="getControl.mail.errors?.required">
+                        Mail cannot be empty
+                    </div>
+                    <div *ngIf= "getControl.mail.errors?.minlenght">
+                        Not enough characters
+                    </div>
+                </div>
+
+                <label>SecondaryGame</label>
+                <input id="school" formControlName = "school" type="text" class= "form-control" placeholder="Add your school">
+                <div *ngIf="getControl.school.invalid && (getControl.school.dirty || getControl.school.touched)" class="alert alert-danger">
+                    <div *If="getControl.school.errors?.required">
+                        School cannot be empty
+                    </div>
+                    <div *ngIf= "getControl.fullname.errors?.minlenght">
+                        Not enough characters
+                    </div>
+                </div>
+
+                <label>OptionalGame</label>
+                <input id="fullname" formControlName="fullname" type="text" class="form-control" placeholder="Add the full neme of the user">
+                <div *ngIf="getControl.fullname.invalid && (getControl.fullname.dirty || getControl.fullname.touched)" class="alert alert-danger">
+                    <div *If="getControl.fullname.errors?.required">
+                        Name cannot be empty
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.minlenght">
+                        Not enough characters
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.maxlength">
+                        The username exceeds the maximum number of characters
+                    </div>
+                </div>
+
+                <label>Years gaming</label>
+                <input id="fullname" formControlName="fullname" type="text" class="form-control" placeholder="Add the full neme of the user">
+                <div *ngIf="getControl.fullname.invalid && (getControl.fullname.dirty || getControl.fullname.touched)" class="alert alert-danger">
+                    <div *If="getControl.fullname.errors?.required">
+                        Name cannot be empty
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.minlenght">
+                        Not enough characters
+                    </div>
+                    <div *ngIf="getControl.fullname.errors?.maxlength">
+                        The username exceeds the maximum number of characters
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="card-footer">
+
+        </div>
+    </div>
+
+</div>
